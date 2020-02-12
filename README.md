@@ -10,6 +10,7 @@ There's almost no abstraction over actual communication with the server.
 use redis_simple::*;
 let conn = redis_simple::Connection::new("localhost:6379")?;
 conn.try_execute("SET name redis_simple")?;
+let name = conn.try_execute("GET name")?;
 ```
 
 ## Installation
