@@ -11,3 +11,14 @@ use redis_simple::*;
 let conn = redis_simple::Connection::new("localhost:6379")?;
 conn.try_execute("SET name redis_simple")?;
 ```
+
+## Installation
+
+``` toml
+# ...
+
+[dependencies]
+redis_simple = { git = "https://github.com/aodhneine/redis_simple" }
+
+# ...
+```
