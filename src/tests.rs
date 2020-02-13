@@ -6,7 +6,7 @@ fn connection() {
     "Failed to create connection to Redis database!");
 }
 
-/// Requires running Redis server AND clean redis instance.
+/// Requires running Redis server AND clean redis instance!
 #[test]
 fn protocol() {
   const ADDRESS: &str = "localhost:16379";

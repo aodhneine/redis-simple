@@ -87,6 +87,7 @@ impl Connection {
       writer: std::io::BufWriter::new(stream),
     });
   }
+
   fn try_parse(&mut self) -> Result<ReturnType, error::Error> {
     use std::io::BufRead;
     let mut line = String::new();
